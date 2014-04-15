@@ -8,22 +8,22 @@ http://en.wikipedia.org/wiki/Paper_size
 
 Add this line to your application's Gemfile:
 
-  `gem 'pt_papersize'`
+    gem 'pt_papersize'
 
 And then execute:
 
-  `bundle`
+    $ bundle
 
 Or install it yourself as:
 
-  `gem install pt_papersize`
+    $ gem install pt_papersize
 
 ## Usage
 
 ```ruby
 require 'pt/papersize'
 papersize = PT::PaperSize.new(595,842)
-pp papersize.name
+puts papersize.name
 ```
 
 ## Contributing
