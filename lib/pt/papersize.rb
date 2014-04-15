@@ -22,7 +22,9 @@ module PT
       long_edge_ceil = long_edge_mm.ceil
 
       available_sizes = PT::PaperSize::PAPER_SIZES.select do |entry|
-        (entry[:width] == short_edge_floor || entry[:width] == short_edge_ceil) && (entry[:height] == long_edge_floor || entry[:height] == long_edge_ceil)
+        paper_short = [entry[:width], entry[:height]].min
+        paper_long = [entry[:width], entry[:height]].max
+        (paper_short == short_edge_floor || paper_short == short_edge_ceil) && (paper_long == long_edge_floor || paper_long == long_edge_ceil)
       end
 
       available_sizes.length > 0 ? available_sizes.first[:name] : 'Custom'
