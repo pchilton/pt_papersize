@@ -38,6 +38,10 @@ module PT
       { name: 'C9', standard: 'ISO216', width: 40, height: 57 },
       { name: 'C10', standard: 'ISO216', width: 28, height: 40 },
 
+      # DIN476 (ISO precursor)
+      { name: '4A0', standard: 'DIN476', width: 1682, height: 2378 },
+      { name: '2A0', standard: 'DIN476', width: 1189, height: 1682 },
+
       # Other metric sizes
       { name: 'DL', width: 99, height: 210 },
       { name: 'DLE', width: 110, height: 220 },

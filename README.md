@@ -22,8 +22,9 @@ Or install it yourself as:
 
 ```ruby
 require 'pt/papersize'
-papersize = PT::PaperSize.new(595,842)
-puts papersize.name
+
+papersize = PT::PaperSize.find(595,842)
+puts papersize[:name]
 ```
 
 ## Contributing
