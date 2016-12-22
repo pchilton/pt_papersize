@@ -57,6 +57,19 @@ module PT
       { name: 'SRA3', width: 320, height: 450 },
       { name: 'SRA4', width: 225, height: 320 },
       { name: 'A3+', width: 29, height: 483 },
+
+      # JIS(Japanese Industrial Standards) paper sizes
+      { name: 'B0', standard: 'JIS', width: 1030, height: 1456 },
+      { name: 'B1', standard: 'JIS', width: 728, height: 1030 },
+      { name: 'B2', standard: 'JIS', width: 515, height: 728 },
+      { name: 'B3', standard: 'JIS', width: 364, height: 515 },
+      { name: 'B4', standard: 'JIS', width: 257, height: 364 },
+      { name: 'B5', standard: 'JIS', width: 182, height: 257 },
+      { name: 'B6', standard: 'JIS', width: 128, height: 182 },
+      { name: 'B7', standard: 'JIS', width: 91, height: 128 },
+      { name: 'B8', standard: 'JIS', width: 64, height: 91 },
+      { name: 'B9', standard: 'JIS', width: 45, height: 64 },
+      { name: 'B10', standard: 'JIS', width: 32, height: 45 },
     ]
   end
 end
